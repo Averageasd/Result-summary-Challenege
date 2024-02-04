@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Results summary component</title>
+    <link href="style.css" rel="stylesheet"/>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+<main class="result-card">
+    <section class="result-card__score">
+        <p>Your Result</p>
+        <div class="result-card__num">
+            <div class="result-card__top">
+                <h1>76</h1>
+            </div>
+            <div class="result-card__bottom">
+                <p>of 100</p>
+            </div>
+        </div>
+        <div class="result-card__evaluation">
+            <h3>
+                Great
+            </h3>
+            <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+    </section>
+    <section class="result-card__summary">
+        <h4 class="result-card__title">Summary</h4>
+        <div class="result-card__skills">
+            <ul class="result-card__skill-list">
+                <li class="result-card__skill">
+                    <div class="result-card__left">
+                        <div class="img-container">
+                            <img src="assets/images/icon-reaction.svg" alt="reaction icon"/>
+                        </div>
+                        <p class="result-card__skill-name">Reaction</p>
+                    </div>
+                    <p class="result-card__skill-score"><span class="result-card__skill-score--bold">80</span> / 100</p>
+
+                </li>
+                <li class="result-card__skill">
+                    <div class="result-card__left">
+                        <div class="img-container">
+                            <img src="assets/images/icon-memory.svg" alt="reaction icon"/>
+                        </div>
+                        <p class="result-card__skill-name">Memory</p>
+                    </div>
+                    <p class="result-card__skill-score"><span class="result-card__skill-score--bold">92</span> / 100</p>
+                </li>
+                <li class="result-card__skill">
+                    <div class="result-card__left">
+                        <div class="img-container">
+                            <img src="assets/images/icon-verbal.svg" alt="reaction icon"/>
+                        </div>
+                        <p class="result-card__skill-name">Verbal</p>
+                    </div>
+                    <p class="result-card__skill-score"><span class="result-card__skill-score--bold">61</span> / 100</p>
+                </li>
+                <li class="result-card__skill">
+                    <div class="result-card__left">
+                        <div class="img-container">
+                            <img src="assets/images/icon-visual.svg" alt="reaction icon"/>
+                        </div>
+                        <p class="result-card__skill-name">Visual</p>
+                    </div>
+                    <p class="result-card__skill-score"><span class="result-card__skill-score--bold">72</span> / 100</p>
+                </li>
+            </ul>
+        </div>
+        <button>Continue</button>
+    </section>
+</main>
+</body>
+</html>
