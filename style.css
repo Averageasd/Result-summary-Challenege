@@ -37,8 +37,11 @@
     --Cobalt-blue: hsl(234, 85%, 45%);
     --Light-slate-blue: hsl(252, 100%, 67%);
     --Light-royal-blue: hsl(241, 81%, 54%);
+    --Lighter-royal-blue: hsla(241, 81%, 54%, 0.8);
     --Violet-blue: hsla(256, 72%, 46%, 1);
     --Persian-blue: hsla(241, 58%, 46%, 1);
+    --Light-Persian-blue: hsla(241, 58%, 46%, 0.5);
+    --Lighter-Persian-blue: hsla(241, 58%, 55%, 0.5);
     --White: hsl(0, 0%, 100%);
     --Pale-blue: hsl(221, 100%, 96%);
     --Light-lavender: hsl(241, 100%, 89%);
@@ -109,27 +112,33 @@ button {
 }
 
 .result-card__num {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    background-color: var(--Persian-blue);
+    background-color: var(--Light-Persian-blue);
+}
+
+.result-card__num > h1 {
+    font-size: 48px;
+    color: var(--White);
+    font-family: "HankenGrotesk-ExtraBold", sans-serif;
+    font-weight: var(--fw-800);
 }
 
 .result-card__bottom, .result-card__top {
     flex-grow: 1;
 }
 
+
 .result-card__top > h1 {
     font-size: 48px;
     color: var(--White);
-}
-
-.result-card__bottom {
-    background-color: var(--Light-royal-blue);
 }
 
 .result-card__num > p {
@@ -228,6 +237,8 @@ button {
     }
 
     .result-card__summary {
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
         box-shadow: 8px 8px 24px var(--Pale-blue);
     }
 }
